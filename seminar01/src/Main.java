@@ -130,7 +130,6 @@ class Product
             return false;
         if(otherProduct.price != this.price)
             return false;
-        // aici explodeaza calculatorul
         if(otherProduct.type != this.type)
             return false;
         if(otherProduct.category != this.category)
