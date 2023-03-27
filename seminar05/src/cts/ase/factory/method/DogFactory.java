@@ -1,0 +1,8 @@
+package cts.ase.factory.method;
+
+public class DogFactory implements AnimalFactory {
+    @Override
+    public Animal createAnimal() {
+        return new Dog();
+    }
+}
