@@ -1,5 +1,6 @@
 package ro.ase.cts.singleton.spital;
 
+import ro.ase.cts.builder.spital.Pacient;
 import ro.ase.cts.factory.spital.Personal;
 
 import java.util.ArrayList;
@@ -9,9 +10,11 @@ public class Spital {
     private static Spital instance = null;
 
     List<Personal> listaPersonal = null;
+    List<Pacient> listaPacienti = null;
 
     private Spital() {
-        listaPersonal = new ArrayList<>();
+        this.listaPersonal = new ArrayList<>();
+        this.listaPacienti = new ArrayList<>();
     }
 
     public static Spital getInstance() {
